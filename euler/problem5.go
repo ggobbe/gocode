@@ -15,7 +15,7 @@ func smallestMultiple(dividendMax int) int {
 }
 
 func canBeDivided(n int, dividendMax int) bool {
-	for i := 1; i <= dividendMax; i++ {
+	for i := dividendMax - 1; i > 0; i-- {
 		if n%i != 0 {
 			return false
 		}
