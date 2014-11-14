@@ -7,7 +7,7 @@ func main() {
 }
 
 func smallestMultiple(dividendMax int) int {
-	for i := 1; ; i++ {
+	for i := dividendMax; ; i += dividendMax {
 		if canBeDivided(i, dividendMax) {
 			return i
 		}
