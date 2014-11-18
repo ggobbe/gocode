@@ -18,7 +18,7 @@ func largestPalindromeProduct(n int) int {
 	for i := start; i < end; i++ {
 		for j := start; j < end; j++ {
 			product := i * j
-			if isPalindrome(product) && product > largest {
+			if product > largest && isPalindrome(product) {
 				largest = product
 			}
 		}
@@ -31,13 +31,12 @@ func isPalindrome(n int) bool {
 }
 
 func reverse(n int) int {
-	temp := n
 	var reverse int
 
-	for temp != 0 {
-		reverse = reverse * 10
-		reverse = reverse + temp%10
-		temp = temp / 10
+	for n != 0 {
+		reverse *= 10
+		reverse += n % 10
+		n /= 10
 	}
 	return reverse
 }
