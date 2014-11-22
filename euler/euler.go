@@ -12,4 +12,5 @@ func main() {
 	fmt.Println("Problem 7:", problem7())
 	fmt.Println("Problem 8:", problem8())
 	fmt.Println("Problem 9:", problem9())
+	fmt.Println("Problem 10:", problem10())
 }
