@@ -16,6 +16,7 @@ func main() {
 	displayAnswer(8, problem8)
 	displayAnswer(9, problem9)
 	displayAnswer(10, problem10)
+	displayAnswer(11, problem11)
 }
 
 func displayAnswer(n int, fn func() int) {
