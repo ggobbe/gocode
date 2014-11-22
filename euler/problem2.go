@@ -1,11 +1,9 @@
 package main
 
-import "fmt"
-
-func main() {
+func problem2() int {
 	var (
-		first  int = 0
-		second int = 1
+		first  int
+		second = 1
 		next   int
 		sum    int
 	)
@@ -19,5 +17,5 @@ func main() {
 			sum += next
 		}
 	}
-	fmt.Println("Answer:", sum)
+	return sum
 }

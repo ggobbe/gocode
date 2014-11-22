@@ -1,13 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "strings"
 
-func main() {
+func problem8() int {
 	cleanText := strings.Replace(text, "\n", "", -1)
-	fmt.Println("Answer:", largestProduct(cleanText, 13))
+	return largestProduct(cleanText, 13)
 }
 
 func largestProduct(str string, adjacents int) int {

@@ -1,9 +1,7 @@
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println("Answer:", smallestMultiple(20))
+func problem5() int {
+	return smallestMultiple(20)
 }
 
 func smallestMultiple(dividendMax int) int {

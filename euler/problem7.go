@@ -1,12 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "math"
 
-func main() {
-	fmt.Println("Answer:", primeNth(10001))
+func problem7() int {
+	return primeNth(10001)
 }
 
 func primeNth(n int) int {

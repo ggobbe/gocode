@@ -1,12 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "math"
 
-func main() {
-	fmt.Println("Answer:", largestPalindromeProduct(3))
+func problem4() int {
+	return largestPalindromeProduct(3)
 }
 
 func largestPalindromeProduct(n int) int {

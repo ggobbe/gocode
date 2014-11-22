@@ -1,9 +1,7 @@
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println("Answer:", sumSquareDiff(100))
+func problem6() int {
+	return sumSquareDiff(100)
 }
 
 func sumSquareDiff(n int) int {
