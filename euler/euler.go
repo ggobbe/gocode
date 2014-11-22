@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	start := time.Now()
 	displayAnswer(1, problem1)
 	displayAnswer(2, problem2)
 	displayAnswer(3, problem3)
@@ -18,6 +19,8 @@ func main() {
 	displayAnswer(10, problem10)
 	displayAnswer(11, problem11)
 	displayAnswer(12, problem12)
+	stop := time.Now()
+	fmt.Println("\t\t\t\tTotal:", stop.Sub(start))
 }
 
 func displayAnswer(n int, fn func() int) {
