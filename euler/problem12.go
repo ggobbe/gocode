@@ -2,31 +2,23 @@ package main
 
 func problem12() int {
 	var sum int
-	factors := []int{}
-	largest := 0
+	factors := 0
 
-	for i := 1; len(factors) <= 500; i++ {
+	for i := 1; factors <= 500; i++ {
 		sum += i
 
-		factors = findFactors(sum)
-
-		if len(factors) > largest {
-			largest = len(factors)
-		}
+		factors = countFactors(sum)
 	}
 
 	return sum
 }
 
-func findFactors(n int) []int {
-	factors := []int{}
+func countFactors(n int) int {
+	factors := 0
 
-	for i := 1; i < n; i++ {
+	for i := 1; n/i > i; i++ {
 		if n%i == 0 {
-			if n/i <= i {
-				break
-			}
-			factors = append(factors, i, n/i)
+			factors += 2
 		}
 	}
 
